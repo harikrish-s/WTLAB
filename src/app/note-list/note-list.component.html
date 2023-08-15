@@ -1,0 +1,8 @@
+<br><br><br>
+<h2>Notes</h2>
+<ul>
+  <li *ngFor="let note of notes; let i = index">
+    <span>{{ note }}</span>
+    <button (click)="deleteNote(i)">Delete</button>
+  </li>
+</ul>
